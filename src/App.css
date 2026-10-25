@@ -1,0 +1,190 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 16px 60px;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  padding: 32px 16px;
+  margin-bottom: 20px;
+  background: #f2f2ee;
+  color: #111;
+  border: 3px solid #f2f2ee;
+  box-shadow: 6px 6px 0 #555;
+}
+.header h1 {
+  font-size: 40px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+.header p {
+  margin-top: 6px;
+  color: #444;
+}
+
+/* Ringkasan */
+.ringkasan {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.ringkasan .item {
+  flex: 1;
+  background: #f2f2ee;
+  color: #111;
+  border: 2px solid #f2f2ee;
+  padding: 14px;
+  text-align: center;
+}
+.ringkasan .angka {
+  font-size: 30px;
+  font-weight: 800;
+}
+.ringkasan .label {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: #1a1a1a;
+  padding: 16px;
+  border: 2px solid #f2f2ee;
+  margin-bottom: 16px;
+}
+.form input,
+.form select,
+.cari input {
+  padding: 10px 12px;
+  border: 2px solid #f2f2ee;
+  background: #0d0d0d;
+  color: #f2f2ee;
+  flex: 1 1 160px;
+}
+.form input:focus,
+.form select:focus,
+.cari input:focus {
+  outline: none;
+  box-shadow: 3px 3px 0 #f2f2ee;
+}
+.form button {
+  padding: 10px 24px;
+  border: 2px solid #f2f2ee;
+  background: #f2f2ee;
+  color: #111;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.form button:hover {
+  background: #0d0d0d;
+  color: #f2f2ee;
+}
+
+/* Cari */
+.cari {
+  margin-bottom: 20px;
+}
+.cari input {
+  width: 100%;
+}
+
+/* Daftar & kartu */
+.daftar {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+.pesan-kosong {
+  text-align: center;
+  padding: 40px;
+  border: 2px dashed #f2f2ee;
+}
+.kartu {
+  background: #f2f2ee;
+  color: #111;
+  border: 2px solid #f2f2ee;
+  box-shadow: 5px 5px 0 #555;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.kartu:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 8px 8px 0 #555;
+}
+.kartu .sampul {
+  height: 260px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 72px;
+  font-weight: 800;
+  color: #f2f2ee;
+  background: #111;
+  border-bottom: 2px solid #111;
+  overflow: hidden;
+}
+.kartu .sampul img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+}
+.kartu .isi {
+  padding: 14px;
+}
+.kartu h3 {
+  font-size: 17px;
+  margin-bottom: 4px;
+}
+.kartu .penulis {
+  font-size: 13px;
+  color: #555;
+  margin-bottom: 8px;
+}
+.kartu .chapter {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.badge,
+.status {
+  display: inline-block;
+  padding: 2px 10px;
+  font-size: 12px;
+  margin-right: 6px;
+  border: 1.5px solid #111;
+}
+.badge {
+  background: #f2f2ee;
+  color: #111;
+}
+.status.ongoing {
+  background: #111;
+  color: #f2f2ee;
+}
+.status.tamat {
+  background: #f2f2ee;
+  color: #111;
+  text-decoration: line-through;
+}
+
+.btn-hapus {
+  margin-top: 12px;
+  width: 100%;
+  padding: 7px;
+  border: 2px solid #111;
+  background: #f2f2ee;
+  color: #111;
+  font-weight: 700;
+  cursor: pointer;
+}
+.btn-hapus:hover {
+  background: #111;
+  color: #f2f2ee;
+}
